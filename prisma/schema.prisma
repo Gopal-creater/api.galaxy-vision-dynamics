@@ -13,19 +13,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-<<<<<<< HEAD
 
 model Articles{
   id Int @id @default(autoincrement())
   title String?
   category String?
   description String?
-  image String?
+  imageUrl String?
   createdAt DateTime @default(now())
-=======
+  }
+
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
->>>>>>> 611fc52afdf0d42be14e2048d7586ce94aeb5930
 }
